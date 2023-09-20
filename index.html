@@ -110,7 +110,7 @@
 
 			<section>
 				<section>
-					<h3>¿Que son los archivos Json?</h3>
+					<h3>¿Que Es Composite?</h3>
 					<img src="imgs/soldier.png" alt="sol" style="height: 300px;">
 
 				</section>
@@ -129,91 +129,103 @@
 					</p>
 				</section>
 				<section data-auto-animate data-background-color="#000000">
+					<img src="imgs/singleton.png" style="height: 200px;">
 					<h1>Singleton</h1>
 					<p>Es un patrón de diseño creacional que nos permite asegurarnos de que una clase tenga una única
 						instancia, a la vez que proporciona un punto de acceso global a dicha instancia.</p>
+
 				</section>
 				<section data-auto-animate data-background-color="">
-					<h6>!Principales Caracteristicas!</h6>
+					<img src="imgs/singleton.png" style="height: 200px;">
+					<h5>!Facade!</h5>
 					<ul>
 						<li>Lenguaje independiente</li>
-						<p>La simplicidad con que los datos están estructurados en el formato JSON permite que sea
-							utilizado en cualquier tipo de lenguaje de programación.</p>
+						<p>El Cliente utiliza la fachada en lugar de invocar directamente los objetos del subsistema..
+						</p>
 					</ul>
 				</section>
 				<section>
 					<ul>
-						<li>Formatación del archivo JSON</li>
-						<p>Además de la terminación .json en todos los archivos que utilizan este formato, los datos
-							almacenados deben seguir una notación específica, o sea, necesitan organizarse con los
-							siguientes elementos básicos</p>
+						<li>Fachada Adicional</li>
+						<p>Puede crearse una clase fachada adicional para evitar contaminar una única fachada con
+							funciones no relacionadas que podrían convertirla en otra estructura compleja. Las fachadas
+							adicionales pueden utilizarse por clientes y por otras fachadas.
+
+						</p>
 					</ul>
 				</section>
 
-				<section data-background-color="
-#D32929">
-					<h3>esta manera se deben relacionar los datos en un file json.</h3>
+				<section data-background-color="">
+					<img src="imgs/flyweight.png" style="height: 200px;">
+
+					<h3>Flyweight</h3>
+					<p>El patrón Flyweight se usa para reducir el uso de memoria y mejorar el rendimiento al reducir la
+						creación de objetos. El patrón busca objetos similares que ya existen para reutilizarlo en lugar
+						de crear otros nuevos que sean similares.</p>
 
 				</section>
-				<section data-markdown>
-
-					<textarea data-template>
-								```js [1-2|3|4]
-								
-								"nombre": "Jonh Doe",
-								"profesion":"Programador",
-								"edad":25,
-								"lenguajes":["PHP","Javascript","Dart"],
-								"disponibilidadParaViajar":true,
-								"rangoProfesional":{
-									"añosDeExperiencia":12,
-									"nivel":"Senior"
-								
-								}
-							
-								`````````
-							  </textarea>
+				<section>
+					<h2>Proxy</h2>
+					<p>Se utiliza para crear objetos que pueden representar funciones de otras clases u objetos y la
+						interfaz se utiliza para acceder a estas funcionalidades</p>
+					<img src="imgs/solution-es.png" style="height: 200px;">
 				</section>
 
 			</section>
 			<section data-background-color="#46B3E9">
-				<h1>🗂️</h1>Archivos Parquet
+				<img src="imgs/chain-of-responsibility.png" style="height: 200px ;">
+				<h1></h1>Chain of Responsibility
 			</section>
-			<section>Apache Parquet es un formato de archivo de datos orientado a columnas de código abierto diseñado
-				para el almacenamiento y la recuperación de datos eficientes.</section>
+			<section>El patrón de diseño Chain of Responsibility es un patrón de comportamiento que evita acoplar el
+				emisor de una petición a su receptor dando a más de un objeto la posibilidad de responder a una
+				petición.</section>
 			<section>
-				<h4>Beneficios de Parquet</h4>
-				<p>Bueno para almacenar big data de cualquier tipo (tablas de datos estructurados, imágenes, videos,
-					documentos).</p>
-			</section>
-			<section>
-				<p>
-					Ahorra espacio de almacenamiento en la nube mediante el uso de una compresión por columnas altamente
-					eficiente y esquemas de codificación flexibles para columnas con diferentes tipos de datos.
 
-				</p>
+				<h6>Comamand</h6>
+				<p>Convierte una solicitud en un objeto independiente que contiene toda la información sobre
+					la solicitud. Esta transformación permite parametrizar métodos con diferentes solicitudes, retrasar
+					o
+					poner en cola la ejecución de una solicitud y respaldar operaciones que no se pueden deshacer.</p>
+				<img src="imgs/command-es.png" style="height: 150px ;">
+
 			</section>
 			<section>
+				<h2>Interpreter </h2>
 				<p>
-					Mayor rendimiento y rendimiento de los datos mediante técnicas como la omisión de datos, en la que
-					las consultas que obtienen valores de columna específicos no necesitan leer toda la fila de datos.
+					El patrón de diseño Interpreter es un patrón de diseño estructural que se utiliza para dar una
+					interpretación a un lenguaje específico.
+
+					Esto se logra mediante la creación de un intérprete que se encarga de analizar y ejecutar las
+					instrucciones del lenguaje.
 				</p>
 			</section>
 			<section>
-				<h4>Ventajas de almacenar datos en un formato de columnas</h4>
+				<img src="imgs/iterator-es.png" style="height: 150px ;">
+
+				<h3>Iterator</h3>
+				<p>
+					Iterator es un patrón de diseño de comportamiento que te permite recorrer elementos de una colección
+					sin exponer su representación subyacente (lista, pila, árbol, etc.).
+				</p>
 			</section>
 			<section>
-				<p>El almacenamiento en columnas como Apache Parquet está diseñado para brindar eficiencia en
-					comparación con los archivos basados ​​en filas como CSV. Al realizar consultas, el almacenamiento
-					en columnas puede omitir los datos no relevantes muy rápidamente. Como resultado, las consultas de
-					agregación consumen menos tiempo en comparación con las bases de datos orientadas a filas. Esta
-					forma de almacenamiento se ha traducido en ahorros de hardware y una latencia minimizada para
-					acceder a los datos.✅</p>
+				<img src="imgs/observer.png" style="height: 150px ;">
+				<h2>observer</h2>
+				<p>Observer es un patrón de diseño de comportamiento que te permite definir un mecanismo de suscripción
+					para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando.
+				</p>
 			</section>
 			<section>
-				<p>Apache Parquet se construye desde cero. Por lo tanto, es capaz de admitir estructuras de datos
-					anidadas avanzadas. El diseño de los archivos de datos de Parquet está optimizado para consultas que
-					procesan grandes volúmenes de datos, en el rango de gigabytes para cada archivo individual.</p>
+				<img src="imgs/visitor.png" style="height: 200px ;">
+				<h3>Visitor</h3>
+				<p>Visitor es un patrón de diseño de comportamiento que te permite separar algoritmos de los objetos
+					sobre los que operan.✅</p>
+			</section>
+			<section>
+				<img src="imgs/download.png" style="height: 200px ;">
+				<h2>MVC</h2>
+				<p>MVC es un patrón de diseño que considera dividir una aplicación en tres módulos claramente
+					identificables y con funcionalidad bien definida: El Modelo, las Vistas y el Controlador.</p>
 			</section>
 			<section data-background-color="#F5F5DC">
 				<h1>FIN ▶️</h1>
